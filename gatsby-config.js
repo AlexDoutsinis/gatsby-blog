@@ -6,5 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["gatsby-plugin-sass"],
+  siteMetadata: {
+    title: "Gatsby Blog",
+    author: "Alexis Doutsinis",
+  },
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    "gatsby-transformer-remark",
+  ],
 }
