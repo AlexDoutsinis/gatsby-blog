@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../components/layout"
-import Head from "../components/Head"
+import Head from "../components/head"
 
 // this is the way to fetch data, just for templates
 export const query = graphql`
